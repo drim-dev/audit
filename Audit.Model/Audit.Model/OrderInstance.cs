@@ -45,6 +45,6 @@ internal class OrderInstance : BaseEntity
     /// </summary>
     public short SortOrder { get; set; }
 
-    public ICollection<Product> Products { get; set; }
-    public ICollection<ProvideService> ProvideServices { get; set; }
+    public ICollection<Product>? Products { get; set; }
+    public ICollection<ProvideService>? ProvideServices { get; set; }
 }

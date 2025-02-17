@@ -51,6 +51,12 @@ internal class Customer : BaseEntity
     public CustomerSource? CustomerSource { get; set; }
 
     /// <summary>
+    /// Заказы клиента
+    /// </summary>
+    public ICollection<Order>? Orders { get; set; }
+
+
+    /// <summary>
     /// События клиента
     /// </summary>
     //public ICollection<Event>? Events { get; set; }
